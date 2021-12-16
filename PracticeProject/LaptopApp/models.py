@@ -1,5 +1,4 @@
 from django.db import models
-#create models
 
 class Laptop(models.Model):
     company = models.CharField(max_length=32)
