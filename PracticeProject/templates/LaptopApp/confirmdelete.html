@@ -7,7 +7,7 @@
     <div class="container">
         <form method="post" class="jumbotron" style="margin:auto;width:60%">
             {% csrf_token %}
-            <p>Are you sure to delete <span style="font-weight:bold;">{{laptop.company}} {{laptop.model_name}}?</span></p>
+            <p>Are you sure to delete the details of  <span style="font-weight:bold;">{{laptop.company}} {{laptop.model_name}}?</span></p>
             <a href="{% url 'delete' laptop.id %}"><button class="btn btn-danger">Delete</button></a>
             <a href="{% url 'show_laptop' %}"><button type="button" class="btn btn-primary">Cancel</button></a>
         </form>
